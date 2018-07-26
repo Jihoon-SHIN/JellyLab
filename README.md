@@ -40,3 +40,19 @@ detection_a.py와 detection_skin.py 가 같이 쓰이고, detection_hsl.py와 de
 ```python
 python detection_skin.py
 ```
+
+
+
+# 5. Seq2Seq
+
+- 한국어 intent classification을 위한 seq2seq
+- encoder로 일반 채팅 데이터가 들어가고, decoder로 intent를 output으로 내도록 learning
+- Testset에서는 60~70%의 성능을 나타냈지만, 실전데이터에서는 좋지 못한 성능을 냄
+
+
+
+# 6. Cnn_nlp
+
+- 한국어 intent classification을 위한 cnn
+- Seq2Seq과 마찬가지로 일반 채팅데이터를 단어 단위로 잘라 convolution Layer로 넣어주고, output으로는 16개의 intent를 output으로 내도록 learning
+- intent의 개수가 너무 많아서 learning이 잘 되지는 않았음
