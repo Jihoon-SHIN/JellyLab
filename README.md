@@ -2,22 +2,27 @@
 
 # 1. Korean_handle
 
-- 한국어를 다루기 위한 Class
+- 한국어를 다루기 위한 Class 입니다.
 - class KoreanHandler
-  - 한글을 자모로 분리
+  - 한글을 자모로 분리합니다.
 - class KoreanDistance
-  - 자모로 바꾼 한글 정보의 편집거리를 구해주는 알고리즘
+  - 자모로 바꾼 한글 정보의 편집거리를 구해주는 알고리즘입니다.
 
-# 2. Crawl_datapreprocess
+# 2. Jellpy
 
-- 다음 뉴스 기사를 crawling하기 위한 자동화 툴
-- crawling 후 전처리 코드
+- korean_handle과 다른 여러 모듈들을 이용해 한국어 띄어쓰기를 위한 module
+- 자세한 사항은 Jellypy안의 README.md 를 참고해주세요.
 
-# 3. fully_connected
+# 3. Crawl_datapreprocess
 
-- 한국어 intent classification을 위한 fully connnected layer(Tensorflow)
+- 다음 뉴스 기사를 crawling하기 위한 자동화 툴입니다.
+- crawling 후 전처리 코드도 포함되어있습니다.
 
-# 4. Skin_detection
+# 4. fully_connected
+
+- 한국어 intent classification을 위한 fully connnected layer(Tensorflow) 입니다.
+
+# 5. Skin_detection
 
 ### Human Skin detection Algorithm
 
@@ -43,16 +48,19 @@ python detection_skin.py
 
 
 
-# 5. Seq2Seq
+# 6. Seq2Seq
 
-- 한국어 intent classification을 위한 seq2seq
-- encoder로 일반 채팅 데이터가 들어가고, decoder로 intent를 output으로 내도록 learning
-- Testset에서는 60~70%의 성능을 나타냈지만, 실전데이터에서는 좋지 못한 성능을 냄
+- 한국어 intent classification을 위한 seq2seq 입니다.
+- encoder로 일반 채팅 데이터가 들어가고, decoder로 intent를 output으로 내도록 learning 합니다/
+- Testset에서는 60~70%의 성능을 나타냈지만, 실전데이터에서는 좋지 못한 성능을 냈습니다. 
+- 한국어 딥러닝 쉽지 않았습니다.
 
 
 
-# 6. Cnn_nlp
+# 7. Cnn_nlp
 
-- 한국어 intent classification을 위한 cnn
-- Seq2Seq과 마찬가지로 일반 채팅데이터를 단어 단위로 잘라 convolution Layer로 넣어주고, output으로는 16개의 intent를 output으로 내도록 learning
-- intent의 개수가 너무 많아서 learning이 잘 되지는 않았음
+- 한국어 intent classification을 위한 cnn 입니다.
+- Seq2Seq과 마찬가지로 일반 채팅데이터를 단어 단위로 잘라 convolution Layer로 넣어주고, output으로는 16개의 intent를 output으로 내도록 learning 합니다.
+- intent의 개수가 너무 많아서 learning이 잘 되지는 않았습니다.
+- 한국어 딥러닝 어렵습니다.
+
