@@ -8,7 +8,7 @@
 - class KoreanDistance
   - 자모로 바꾼 한글 정보의 편집거리를 구해주는 알고리즘입니다.
 
-# 2. Jellpy
+# 2. Jellypy
 
 - korean_handle과 다른 여러 모듈들을 이용해 한국어 띄어쓰기를 위한 module
 - 자세한 사항은 Jellypy안의 README.md 를 참고해주세요.
